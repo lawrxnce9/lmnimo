@@ -3,226 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<<<<<<< HEAD
   <title>LM AUTO DEALS 🇬🇭🇺🇸 — Personal Car Shopper</title>
-=======
-  <title>Lawrence Auto 🇬🇭🇺🇸 — Personal Car Shopper</title>
->>>>>>> lm
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-<<<<<<< HEAD
-      <a class="brand" href="#">LM AUTO DEALS 🇬🇭🇺🇸</a>
-=======
-      <a class="brand" href="#">Lawrence Auto 🇬🇭🇺🇸</a>
->>>>>>> lm
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-      <nav class="site-nav">
-          <div class="lang-select">
-            <label for="langSelect" class="sr-only">Language</label>
-            <select id="langSelect" aria-label="Language">
-              <option value="en">English</option>
-              <option value="fr">Français</option>
-              <option value="es">Español</option>
-            </select>
-          </div>
-          <a href="#cars" data-i18n="nav.cars">Cars</a>
-          <a href="#about" data-i18n="nav.about">About</a>
-          <a href="#contact" data-i18n="nav.contact">Contact</a>
-      </nav>
+      <a class="brand" href="#" aria-label="LM AUTO DEALS"><img src="images/logo.png" alt="LM AUTO DEALS"></a>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-inner container">
-        <h1 data-i18n="hero.title">Worldwide Car Sourcing & Shipping</h1>
-        <p class="lead" data-i18n="hero.lead">I buy premium, sports, hybrid and affordable cars from U.S. dealerships and ship them globally — hassle-free.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#cars" data-i18n="hero.browse">Browse Cars</a>
-          <a class="btn" href="#contact" data-i18n="hero.quote">Get A Quote</a>
+    <section class="hero hero-slideshow" id="heroSlideshow">
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-slides">
+        <div class="hero-slide active" data-tint="#6c7480" style="--name-color:rgba(48,55,66,0.55)">
+          <span class="hero-name" aria-hidden="true">Audi A6</span>
+          <img class="hero-car" src="images/homepage/audi_grey.png" alt="Audi A6">
+        </div>
+        <div class="hero-slide" data-tint="#1f1f1f" style="--name-color:rgba(22,22,22,0.5)">
+          <span class="hero-name" aria-hidden="true">G-Wagon</span>
+          <img class="hero-car" src="images/homepage/g_wagon_black.png" alt="Mercedes-Benz G-Class">
+        </div>
+        <div class="hero-slide" data-tint="#3d8f47" style="--name-color:rgba(32,82,40,0.55)">
+          <span class="hero-name" aria-hidden="true">AMG GT</span>
+          <img class="hero-car" src="images/homepage/mercedes_green.png" alt="Mercedes-AMG GT">
         </div>
       </div>
-    </section>
-
-    <section id="cars" class="container section">
-      <h2 data-i18n="cars.title">Our Selections</h2>
-      <p class="muted" data-i18n="cars.muted">Curated inventory by category. Click a card to view details or contact me for custom sourcing.</p>
-
-      <div class="categories">
-        <div id="luxury" class="category">
-          <h3>Luxury Cars</h3>
-          <div class="card-grid">
-            <article class="card" data-id="luxury1">
-              <img src="https://images.pexels.com/photos/18369291/pexels-photo-18369291.jpeg" alt="Mercedes S-Class">
-              <h4>Mercedes S-Class</h4>
-              <p class="muted">Comfort, technology, prestige.</p>
-            </article>
-            <article class="card" data-id="luxury2">
-              <img src="https://images.pexels.com/photos/23228837/pexels-photo-23228837.jpeg" alt="BMW 7 Series">
-              <h4>BMW 7 Series</h4>
-              <p class="muted">Dynamic driving, premium finish.</p>
-            </article>
-          </div>
-        </div>
-
-        <div id="sports" class="category">
-          <h3>Sports Cars</h3>
-          <div class="card-grid">
-            <article class="card" data-id="sports1">
-              <img src="https://images.unsplash.com/photo-1593353798398-6024b7444bb6?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Porsche 911">
-              <h4>Porsche 911</h4>
-              <p class="muted">Iconic handling and speed.</p>
-            </article>
-            <article class="card" data-id="sports2">
-              <img src="https://images.pexels.com/photos/2568539/pexels-photo-2568539.jpeg" alt="Ferrari">
-              <h4>Ferrari (selection)</h4>
-              <p class="muted">Ultimate performance, limited offers.</p>
-            </article>
-          </div>
-        </div>
-
-        <div id="hybrid" class="category">
-          <h3>Hybrid Cars</h3>
-          <div class="card-grid">
-            <article class="card" data-id="hybrid1">
-              <img src="https://images.pexels.com/photos/16850880/pexels-photo-16850880.jpeg" alt="Toyota Prius / Hybrid">
-              <h4>Toyota Prius / Hybrid</h4>
-              <p class="muted">Efficiency and reliability.</p>
-            </article>
-            <article class="card" data-id="hybrid2">
-              <img src="https://images.pexels.com/photos/11139552/pexels-photo-11139552.jpeg" alt="Plug-in Hybrid">
-              <h4>Plug-in Hybrid</h4>
-              <p class="muted">Electric range.</p>
-            </article>
-          </div>
-        </div>
-
-        <div id="affordable" class="category">
-          <h3>Affordable / Everyday Cars</h3>
-          <div class="card-grid">
-            <article class="card" data-id="affordable1">
-              <img src="https://images.pexels.com/photos/6794815/pexels-photo-6794815.jpeg" alt="Honda Civic">
-              <h4>Honda Civic</h4>
-              <p class="muted">Trusted, economical choice.</p>
-            </article>
-            <article class="card" data-id="affordable2">
-              <img src="https://images.pexels.com/photos/19581626/pexels-photo-19581626.jpeg" alt="Toyota Corolla">
-              <h4>Toyota Corolla</h4>
-              <p class="muted">Affordable and reliable.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="container section about">
-      <h2 data-i18n="about.title">About Lawrence Auto Mobile </h2>
-      <p>I personally source vehicles from trusted U.S. dealerships, inspect them, arrange purchase, and coordinate secure international shipping for clients worldwide. Fast communication, transparent quotes, and experience dealing with export logistics.</p>
-      <ul>
-        <li>Personal sourcing and negotiation</li>
-        <li>Pre-purchase inspection and paperwork</li>
-        <li>Shipping logistics and customs support</li>
-      </ul>
-    </section>
-
-    <section id="process" class="container section process">
-      <h2 data-i18n="process.title">Our Full Process</h2>
-      <p class="muted" data-i18n="process.muted">We handle every step end-to-end so you receive your vehicle smoothly and securely.</p>
-      <div class="process-grid">
-        <div class="process-step">
-          <div class="step-number">1</div>
-          <h4 class="step-title">Order Car</h4>
-          <p class="step-desc">Tell us the make, model, year and any options you want — we’ll start sourcing and negotiate the best deal with trusted dealerships.</p>
-        </div>
-
-        <div class="process-step">
-          <div class="step-number">2</div>
-          <h4 class="step-title">Inspection</h4>
-          <p class="step-desc">We perform a thorough pre-purchase inspection (mechanical, cosmetic, and paperwork) and send you a detailed report and photos.</p>
-        </div>
-
-        <div class="process-step">
-          <div class="step-number">3</div>
-          <h4 class="step-title">Payment</h4>
-          <p class="step-desc">We handle safe payment processing and escrow options; you receive a full invoice and purchase documentation.</p>
-        </div>
-
-        <div class="process-step">
-          <div class="step-number">4</div>
-          <h4 class="step-title">Shipping</h4>
-          <p class="step-desc">We arrange secure international shipping, choose the best carrier (RO-RO, container), and provide tracking updates.</p>
-        </div>
-
-        <div class="process-step">
-          <div class="step-number">5</div>
-          <h4 class="step-title">Clearance</h4>
-          <p class="step-desc">We assist with customs clearance paperwork and local import requirements to make release at the destination as smooth as possible.</p>
-        </div>
-
-        <div class="process-step">
-          <div class="step-number">6</div>
-          <h4 class="step-title">Pickup</h4>
-          <p class="step-desc">Once cleared, the vehicle is available for pickup or last-mile delivery; we confirm handover and close the transaction.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="container section contact">
-      <h2 data-i18n="contact.title">Get A Quote / Contact</h2>
-      <div class="contact-wrap">
-        <form id="contactForm" class="contact-form" action="https://formspree.io/f/movgwkgr" method="POST" autocomplete="on">
-          <label data-i18n="contact.label.name">Full name<input type="text" name="name" required class="input" placeholder="Your full name"></label>
-          <label data-i18n="contact.label.email">Email<input type="email" name="email" required class="input" placeholder="you@example.com"></label>
-          <label data-i18n="contact.label.phone">Phone (with country code)<input type="tel" name="phone" required class="input" placeholder="+44 7..."></label>
-          <label data-i18n="contact.label.country">Destination country<input type="text" name="country" required class="input" placeholder="Country to ship to"></label>
-          <label data-i18n="contact.label.message">Message / Vehicle details<textarea name="message" rows="4" class="input" placeholder="Tell me what you want (make, model, year, budget, special requests)"></textarea></label>
-          <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Send Request</button>
-        </form>
-
-        <aside class="contact-info">
-          <h3>Contact Lawrence Auto Mobile</h3>
-          <p>Phone: <a href="tel:+17348770577">+1 734‑877‑0577</a></p>
-          <p>Email: <a href="mailto:olawrence959@gmail.com">olawrence959@gmail.com</a></p>
-          <p class="muted">I reply quickly — include vehicle preferences and shipping country for a faster quote.</p>
-        </aside>
+      <button class="hero-edge hero-edge--prev" type="button" aria-label="Previous car"></button>
+      <button class="hero-edge hero-edge--next" type="button" aria-label="Next car"></button>
+      <div class="hero-dots" role="tablist" aria-label="Featured cars">
+        <button class="hero-dot active" type="button" data-index="0" aria-label="Show Audi A6"></button>
+        <button class="hero-dot" type="button" data-index="1" aria-label="Show G-Wagon"></button>
+        <button class="hero-dot" type="button" data-index="2" aria-label="Show AMG GT"></button>
       </div>
     </section>
   </main>
 
-  <!-- Modal / Gallery for exterior / interior -->
-  <div id="carModal" class="modal" aria-hidden="true">
-    <div class="modal-content">
-      <button class="modal-close" aria-label="Close">✕</button>
-      <div class="modal-body">
-        <div class="modal-media">
-          <button id="prevImage" class="modal-nav" aria-label="Previous image">‹</button>
-          <img id="modalMain" src="" alt="Car image">
-          <button id="nextImage" class="modal-nav" aria-label="Next image">›</button>
-          <div id="modalThumbnails" class="modal-thumbnails" aria-hidden="false"></div>
-        </div>
-        <div class="modal-controls">
-          <button id="showExterior" class="btn">Exterior</button>
-          <button id="showInterior" class="btn">Interior</button>
-        </div>
-        <div id="modalDetails" class="modal-details"></div>
-        <div class="modal-action">
-          <button id="modalContactBtn" class="btn btn-primary">Contact for this car</button>
-        </div>
-      </div>
-    </div>
-    <div class="modal-backdrop"></div>
-  </div>
-
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> LMAUTOS — Personal Car Shopper</small>
-    </div>
-  </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
-brew --version
